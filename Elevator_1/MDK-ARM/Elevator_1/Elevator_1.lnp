@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"elevator_1\startup_stm32f103xb.o"
+"elevator_1\main.o"
+"elevator_1\stm32f1xx_it.o"
+"elevator_1\stm32f1xx_hal_msp.o"
+"elevator_1\liquidcrystal_i2c.o"
+"elevator_1\stm32f1xx_hal_gpio_ex.o"
+"elevator_1\stm32f1xx_hal_adc.o"
+"elevator_1\stm32f1xx_hal_adc_ex.o"
+"elevator_1\stm32f1xx_hal.o"
+"elevator_1\stm32f1xx_hal_rcc.o"
+"elevator_1\stm32f1xx_hal_rcc_ex.o"
+"elevator_1\stm32f1xx_hal_gpio.o"
+"elevator_1\stm32f1xx_hal_dma.o"
+"elevator_1\stm32f1xx_hal_cortex.o"
+"elevator_1\stm32f1xx_hal_pwr.o"
+"elevator_1\stm32f1xx_hal_flash.o"
+"elevator_1\stm32f1xx_hal_flash_ex.o"
+"elevator_1\stm32f1xx_hal_exti.o"
+"elevator_1\stm32f1xx_hal_i2c.o"
+"elevator_1\stm32f1xx_hal_tim.o"
+"elevator_1\stm32f1xx_hal_tim_ex.o"
+"elevator_1\system_stm32f1xx.o"
+--strict --scatter "Elevator_1\Elevator_1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Elevator_1.map" -o Elevator_1\Elevator_1.axf
